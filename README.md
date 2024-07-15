@@ -2,7 +2,7 @@
 
 ## Demo
 
-Check out a live demo of the application here: [Pizza Menu Demo](#)
+Check out a live demo of the application here: [Pizza Menu Demo](https://pizzzza-menu.netlify.app/)
 
 ## Features
 
