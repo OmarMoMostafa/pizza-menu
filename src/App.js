@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./comoonents/Header";
+import Menu from "./comoonents/Menu";
+import Footer from "./comoonents/Footer";
 
 function App() {
+  const startHour = 12;
+  const endHour = 22;
+  const hour = new Date().getHours();
+  const isOpen = hour >= startHour && hour <= endHour;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Menu isOpen={isOpen} />
+      <Footer startHour={startHour} endHour={endHour} isOpen={isOpen} />
     </div>
   );
 }
